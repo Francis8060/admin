@@ -1,0 +1,6 @@
+node_modules
+mock
+public
+dist
+index.html
+.eslintrc.cjs
