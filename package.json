@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
+    "stage": "vue-tsc && vite build --mode stage",
     "preview": "vite preview",
     "prepare": "husky install",
     "eslint": "eslint --ext .js,.vue,.ts src",
@@ -17,6 +18,7 @@
     "blueimp-md5": "^2.19.0",
     "element-plus": "^2.2.36",
     "jsencrypt": "^3.3.2",
+    "mockjs": "^1.1.0",
     "pinia": "^2.0.33",
     "pinia-plugin-persist": "^1.0.0",
     "vue": "^3.2.45",
@@ -37,6 +39,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.9.0",
     "husky": "^8.0.3",
+    "jszip": "^3.10.1",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "sass": "^1.58.3",
@@ -44,6 +47,8 @@
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.3",
     "vite": "^4.1.0",
+    "vite-plugin-html": "^3.2.0",
+    "vite-plugin-mock": "^2.9.6",
     "vue-eslint-parser": "^9.1.0",
     "vue-tsc": "^1.0.24"
   }
