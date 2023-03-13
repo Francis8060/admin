@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from 'vue-router'
-import { K } from '@/constants/permission'
+import { P } from '@/constants/permission'
 
 export const workspaceRoutes: RouteRecordRaw[] = [
 	{
@@ -7,9 +7,9 @@ export const workspaceRoutes: RouteRecordRaw[] = [
 		name: 'workspace',
 		component: () => import('@/views/workspace/Workspace.vue'),
 		meta: {
-			permission: K.MANNER.PAGE,
+			permission: P.WORKSPACE.PAGE,
 			title: '工作台',
-			icon: 'icon-fenggeguanli'
+			icon: 'icon-workspace'
 		}
 	}
 ]

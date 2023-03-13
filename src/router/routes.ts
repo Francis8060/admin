@@ -1,4 +1,22 @@
 import { type RouteRecordRaw } from 'vue-router'
+import {
+	workspaceRoutes,
+	vehicleRoutes,
+	vehicleNumRoutes,
+	vehicleAbetRoutes,
+	outletRoutes,
+	labelRoutes,
+	labelNumRoutes,
+	otaRoutes,
+	infoRoutes
+} from './module'
+
+
+export type RouteListType = RouteRecordRaw & {
+	title: string
+	icon: string
+	permission: string
+}
 
 export const constRoutes: RouteRecordRaw[] = [
     {
@@ -12,4 +30,16 @@ export const constRoutes: RouteRecordRaw[] = [
 		component: () => import('@/views/Layout.vue'),
 		children: []
 	}
+]
+
+export const asyncRoutes = [
+	...workspaceRoutes,
+	...vehicleRoutes,
+	...vehicleNumRoutes,
+	...vehicleAbetRoutes,
+	...outletRoutes,
+	...labelRoutes,
+	...labelNumRoutes,
+	...otaRoutes,
+	...infoRoutes
 ]
