@@ -5,6 +5,7 @@ import directives from './directives'
 import App from './App.vue'
 import './assets/style/wind.css'
 import 'element-plus/dist/index.css'
+import './assets/style/index.scss'
 import ElementPlus from 'element-plus'
 import zhCN from 'element-plus/es/locale/lang/zh-cn'
 
